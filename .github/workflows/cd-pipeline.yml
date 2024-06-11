@@ -13,9 +13,9 @@ jobs:
       - name: Deploy Container App
         uses: azure/container-apps-deploy-action@v1
         with:
-          imageToDeploy: ${{ secrets.DOCKERHUB_USERNAME }}/devops-labs:latest
+          imageToDeploy: ${{ secrets.DOCKERHUB_USERNAME }}/devsecops:latest
           containerAppName: devops-app
           containerAppEnvironment: devops-app-env
-          resourceGroup: devsecops-lab
+          resourceGroup: DevSecOps
           location: australiaeast
           targetPort: 5000
